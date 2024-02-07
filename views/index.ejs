@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO List</title>
+</head>
+
+<body>
+    <h1>TODO List</h1>
+
+    <ul>
+        <% for(let task of todoList) { %>
+            <li>
+                <%= task %>
+            </li>
+            <% } %>
+    </ul>
+
+    <form action="/add" method="post">
+        <button type="submit" onclick="add()" id="add">Add Task</button>
+        <button type="submit" onclick="remove()" id="delete">Delete Task</button>
+        <button type="submit" onclick="find()" id="find">Find Task</button>
+        <button type="submit" onclick="show()" id="show">Show All</button>
+    </form>
+    <script src="../index.js"></script>
+</body>
+
+</html>
