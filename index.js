@@ -4,7 +4,6 @@ mongoose.connect("mongodb://0.0.0.0:27017/todo");
 const app = express();
 const port = 3000;
 
-/* use for click events*/
 // const addData = document.getElementById("add").onclick(() => add());
 // const deleteData = document.getElementById("delete").onclick(() => remove());
 // const findData = document.getElementById("find").onclick(() => find());
